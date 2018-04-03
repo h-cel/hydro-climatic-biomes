@@ -15,7 +15,7 @@ scikit-learn
 ## Running the tests
 
 In order to test the framework, a folder with 7 .csv files is provided (test). 
-This folder contains the datasets for the locations {(-29.5,144.5), (-29.5,145.5), (-29.5,147.5), (-30.5,143.5), (29.5, 115.5), (29.5, 112.5), (29.5, 113.5)}. For different locations, the user should modify the line 23 of the script main.py, giving the right coordinates. In general, the user can use the datasets provided by http://www.sat-ex.ugent.be/data.php in order to run the framework at global scale. In this case, line 23 of the script main.py should be modified into "coords = joblib.load('./coords.pkl')". The file coords.pkl is also provided and it contains the coordinates for all the land pixels.
+This folder contains the datasets for the locations {(-29.5,144.5), (-29.5,145.5), (-29.5,147.5), (-30.5,143.5), (29.5, 115.5), (29.5, 112.5), (29.5, 113.5)}. For different locations, the user should modify the line 23 of the script main.py, giving the right coordinates. In general, the user can use the datasets provided on [the SAT-EX data page](http://www.sat-ex.ugent.be/data.php) in order to run the framework at global scale. In this case, line 23 of the script main.py should be modified into "coords = joblib.load('./coords.pkl')". The file coords.pkl is also provided and it contains the coordinates for all the land pixels.
 
 To execute the script, use the following commands:
 
