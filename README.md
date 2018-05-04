@@ -2,7 +2,7 @@
 
 This repository contains the source codes used in the following publication: 
 * Papagiannopoulou, C., Miralles, D. G., Demuzere, M., Verhoest, N. E. C., and Waegeman, W.: Global hydro-climatic biomes identified via multi-task learning, Geosci. Model Dev. Discuss., https://doi.org/10.5194/gmd-2018-92, in review, 2018.
-* Code DOI: [![DOI](https://zenodo.org/badge/127893450.svg)](https://zenodo.org/badge/latestdoi/127893450)
+* [![DOI](https://zenodo.org/badge/127893450.svg)](https://zenodo.org/badge/latestdoi/127893450)
 
 ### Prerequisites
 
