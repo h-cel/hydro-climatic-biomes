@@ -5,17 +5,17 @@ import copy
 import os.path
 from numpy import linalg as LA
 import numpy as np
-from sklearn.externals import joblib
+import joblib
 import sys
 import my_solver as ms
-reload(ms)
+# reload(ms)
 
 if __name__ == '__main__':
 	start_time=time.clock()    
 	bFlag = 0
     #initialize parameters
 	num_cores = multiprocessing.cpu_count()	
-	print ('Num of threads:'+ `num_cores`)
+	print ('Num of threads: %s'%num_cores)
 	num_iter = 3
 	h = int(sys.argv[1]) # h parameter
 	d = 3209             # initial (high) dimension 
@@ -25,9 +25,9 @@ if __name__ == '__main__':
 	outp = sys.argv[4] # outpath
 	varfile = sys.argv[5] # .txt file with the variable names
 	remove_ind_file = sys.argv[6] # .pkl file with the indices of the unused input features
-	if not os.path.exists(outp+'h_'+`h`+'_l_'+sys.argv[2]): # create a folder for the results
-		os.makedirs(outp+'h_'+`h`+'_l_'+sys.argv[2])
-	outpath = outp+'h_'+`h`+'_l_'+sys.argv[2] # this is the final output folder
+	if not os.path.exists(outp+'h_%s_l_%s'%(h,sys.argv[2])): # create a folder for the results
+		os.makedirs(outp+'h_%s_l_%s'%(h,sys.argv[2]))
+	outpath = outp+'h_%s_l_%s'%(h,sys.argv[2]) # this is the final output folder
 	Th = np.random.rand(h,d) # random initialiization of the Th matrix
 	u_array = np.zeros((d, m))
 	W = np.random.rand(d,m)
@@ -35,7 +35,7 @@ if __name__ == '__main__':
 	lambd[0,:] = float(sys.argv[2]) # the lambdas are given by the user
     # main loop
 	for it in range(num_iter): 
-		print('iter:'+ `it`)
+		print('iter: %s'%it)
 		w_array = []
 		v_array = []
 		lambdas = []
@@ -69,10 +69,10 @@ if __name__ == '__main__':
 			bFlag=1 #% if the updated values are not that different from the ones of the previous step, stop
 			break
         # store the results
-		joblib.dump(v_array_c, outpath + '/v'+'_h_'+`h`+'_l_'+sys.argv[2]+'_iter3.pkl')
-		joblib.dump(w_array_c, outpath + '/w'+'_h_'+`h`+'_l_'+sys.argv[2]+'_iter3.pkl')
-		joblib.dump(Th_old, outpath + '/theta'+'_h_'+`h`+'_l_'+sys.argv[2]+'_iter3.pkl')
-		joblib.dump(u_array, outpath + '/u'+'_h_'+`h`+'_l_'+sys.argv[2]+'_iter3.pkl')
+		joblib.dump(v_array_c, os.path.join(outpath,'v_h_%s_l_%s_iter3.pkl'%(h,sys.argv[2])))
+		joblib.dump(w_array_c, os.path.join(outpath,'w_h_%s_l_%s_iter3.pkl'%(h,sys.argv[2])))
+		joblib.dump(Th_old, os.path.join(outpath,'theta_h_%s_l_%s_iter3.pkl'%(h,sys.argv[2])))
+		joblib.dump(u_array, os.path.join(outpath,'u_h_%s_l_%s_iter3.pkl'%(h,sys.argv[2])))
 
 	end_time=time.clock()    
 	if bFlag:
