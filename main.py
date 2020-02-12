@@ -9,6 +9,7 @@ import joblib
 import sys
 import my_solver as ms
 # reload(ms)
+import glob
 
 if __name__ == '__main__':
 	start_time=time.clock()    
@@ -16,11 +17,14 @@ if __name__ == '__main__':
     #initialize parameters
 	num_cores = multiprocessing.cpu_count()	
 	print ('Num of threads: %s'%num_cores)
-	num_iter = 3
+	num_iter = 20
 	h = int(sys.argv[1]) # h parameter
 	d = 3209             # initial (high) dimension 
 	csv_path = sys.argv[3] # path of the dataset files (.csv files)
-	coords = [(-29.5,144.5), (-29.5,145.5), (-29.5,147.5), (-30.5,143.5), (29.5, 115.5), (29.5, 112.5), (29.5, 113.5)] # array with the coordinates in tuple format (lat, lon)#joblib.load('/kyukon/data/gent/gvo000/gvo00048/vsc41452/code/python/code_MTL/coords.pkl')
+	# filelist = glob.glob(os.path.join(csv_path,'*.csv'))
+	# coords = [np.array(os.path.basename(x).replace('.csv','').split(',')).astype(float) for x in filelist]
+	# coords = [(-29.5,144.5), (-29.5,145.5), (-29.5,147.5), (-30.5,143.5), (29.5, 115.5), (29.5, 112.5), (29.5, 113.5)] # array with the coordinates in tuple format (lat, lon)#
+	coords = joblib.load('./coords.pkl')
 	m = len(coords)  # number of tasks, i.e., locations 
 	outp = sys.argv[4] # outpath
 	varfile = sys.argv[5] # .txt file with the variable names

@@ -1,0 +1,57 @@
+,HCB_Code,HCB_Class
+AR-Vir,8.0,transitional water-driven
+AU-ASM,6.0,subtropical water-driven
+AU-Ade,8.0,transitional water-driven
+AU-Cpr,8.0,transitional water-driven
+AU-DaP,1.0,transitional energy-driven
+AU-DaS,1.0,transitional energy-driven
+AU-Dry,1.0,transitional energy-driven
+AU-How,1.0,transitional energy-driven
+AU-Stp,1.0,transitional energy-driven
+AU-Wac,1.0,transitional energy-driven
+AU-Wom,8.0,transitional water-driven
+BE-Bra,5.0,mid-latitude temperature-driven
+BE-Lon,5.0,mid-latitude temperature-driven
+BE-Vie,5.0,mid-latitude temperature-driven
+BR-Sa3,3.0,tropical
+CA-Gro,4.0,boreal temperature-driven
+CA-NS6,4.0,boreal temperature-driven
+CA-SF2,4.0,boreal temperature-driven
+CA-SF3,4.0,boreal temperature-driven
+CG-Tch,3.0,tropical
+CH-Lae,5.0,mid-latitude temperature-driven
+CN-Din,10.0,subtropical energy-driven
+CZ-BK1,5.0,mid-latitude temperature-driven
+DE-Kli,5.0,mid-latitude temperature-driven
+DE-Obe,5.0,mid-latitude temperature-driven
+DE-RuS,5.0,mid-latitude temperature-driven
+DE-Seh,5.0,mid-latitude temperature-driven
+DE-Spw,5.0,mid-latitude temperature-driven
+DE-Tha,5.0,mid-latitude temperature-driven
+FI-Hyy,7.0,boreal water/temperature-driven
+FI-Let,7.0,boreal water/temperature-driven
+FR-Fon,5.0,mid-latitude temperature-driven
+FR-LBr,1.0,transitional energy-driven
+FR-Pue,1.0,transitional energy-driven
+GF-Guy,1.0,transitional energy-driven
+GH-Ank,3.0,tropical
+IT-Cpz,1.0,transitional energy-driven
+IT-Ro1,1.0,transitional energy-driven
+IT-SRo,1.0,transitional energy-driven
+JP-MBF,4.0,boreal temperature-driven
+JP-SMF,1.0,transitional energy-driven
+MY-PSO,1.0,transitional energy-driven
+NL-Loo,5.0,mid-latitude temperature-driven
+PA-SPn,1.0,transitional energy-driven
+RU-Che,2.0,boreal energy-driven
+RU-Fyo,7.0,boreal water/temperature-driven
+SD-Dem,6.0,subtropical water-driven
+US-ARM,0.0,mid-latitude water-driven
+US-Ivo,2.0,boreal energy-driven
+US-Me6,1.0,transitional energy-driven
+US-SRC,1.0,transitional energy-driven
+US-SRG,1.0,transitional energy-driven
+US-SRM,1.0,transitional energy-driven
+US-Sta,0.0,mid-latitude water-driven
+US-UMd,4.0,boreal temperature-driven
+ZA-Kru,8.0,transitional water-driven
