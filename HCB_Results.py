@@ -66,8 +66,15 @@ ax.set_ylabel('Latitude')
 ax.legend(loc=3)
 figlist.append(fig)
 
+#==============================================================================
+# Save results
+#==============================================================================
+## Sites
+Clust_DF.to_csv('%s_Sites.csv'%ScriptBasename)
 
-Clust_DF.to_csv('%s.csv'%ScriptBasename)
+## Global
+GlobalResults = numpy.concatenate((coords,Class[:,None]),axis=1)
+numpy.savetxt('%s_Global.txt'%ScriptBasename,GlobalResults,header='\t'.join(['Latitude','Longitude','Class']),delimiter='\t')
 
 #==============================================================================
 # Write Plots
