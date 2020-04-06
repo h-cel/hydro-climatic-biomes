@@ -18,21 +18,21 @@ Clust.fit(v)
 Class = Clust.labels_
 
 Class_names = {
-	3: ['tropical','g'],
-	1: ['transitional energy-driven',pyplot.get_cmap('Greens')(0.5)],
-	8: ['transitional water-driven',pyplot.get_cmap('Greens')(0.9)],
-	10:['subtropical energy-driven',pyplot.get_cmap('Oranges')(0.4)],
-	6: ['subtropical water-driven',pyplot.get_cmap('Oranges')(0.7)],
-	5: ['mid-latitude temperature-driven',pyplot.get_cmap('Purples')(0.4)],
-	0: ['mid-latitude water-driven',pyplot.get_cmap('Purples')(0.7)],
-	2: ['boreal energy-driven',pyplot.get_cmap('Blues')(0.2)],
-	4: ['boreal temperature-driven',pyplot.get_cmap('Blues')(0.5)],
-	7: ['boreal water/temperature-driven',pyplot.get_cmap('Blues')(0.7)],
-	9: ['boreal water-driven',pyplot.get_cmap('Blues')(0.9)],
+	3: ['tropical','g','Tropic'],
+	1: ['transitional energy-driven',pyplot.get_cmap('Greens')(0.5),'Trans_E'],
+	8: ['transitional water-driven',pyplot.get_cmap('Greens')(0.9),'Trans_W'],
+	10:['subtropical energy-driven',pyplot.get_cmap('Oranges')(0.4),'SubTr_E'],
+	6: ['subtropical water-driven',pyplot.get_cmap('Oranges')(0.7),'SubTr_E'],
+	5: ['mid-latitude temperature-driven',pyplot.get_cmap('Purples')(0.4),'MidL_T'],
+	0: ['mid-latitude water-driven',pyplot.get_cmap('Purples')(0.7),'MidL_W'],
+	2: ['boreal energy-driven',pyplot.get_cmap('Blues')(0.2),'Bor_E'],
+	4: ['boreal temperature-driven',pyplot.get_cmap('Blues')(0.5),'Bor_T'],
+	7: ['boreal water/temperature-driven',pyplot.get_cmap('Blues')(0.7),'Bor_WT'],
+	9: ['boreal water-driven',pyplot.get_cmap('Blues')(0.9),'Bor_W'],
 }
 
 
-TowerRoot = '/mnt/HDS_SAFLAND/SAFLAND/ecoprophet/validation/towers'
+TowerRoot = '/mnt/HDS_ECOPROPHET/ECOPROPHET/ecoprophet/validation/towers'
 SitesFilename = os.path.join(TowerRoot,'fluxmeta','thesites.csv')
 Sites_DF = pandas.read_csv(SitesFilename,index_col = 1)
 
@@ -46,7 +46,11 @@ for iF in range(nF):
 	iMin = numpy.argmin((coords[:,1] - Sites_DF.loc[TestSite].towerlon)**2 \
 						+ (coords[:,0] - Sites_DF.loc[TestSite].towerlat)**2)
 	Clust_DF.loc[TestSite,'HCB_Code'] = Class[iMin]
-	Clust_DF.loc[TestSite,'HCB_Class'] = Class_names[Class[iMin]][0]
+	if TestSite in ['GF-Guy','MY-PSO']:
+		print('FORCE HCB FOR GF-Guy and MY-PSO')
+		Clust_DF.loc[TestSite,'HCB_Code'] = 3.0
+	Clust_DF.loc[TestSite,'HCB_Class'] = Class_names[Clust_DF.loc[TestSite,'HCB_Code']][0]
+	Clust_DF.loc[TestSite,'HCB_Short'] = Class_names[Clust_DF.loc[TestSite,'HCB_Code']][2]
 
 
 fig = pyplot.figure(figsize=[20,10])
