@@ -1,0 +1,57 @@
+,HCB_Code,HCB_Class,HCB_Short
+AR-Vir,8.0,transitional water-driven,Trans_W
+AU-ASM,6.0,subtropical water-driven,SubTr_E
+AU-Ade,8.0,transitional water-driven,Trans_W
+AU-Cpr,8.0,transitional water-driven,Trans_W
+AU-DaP,1.0,transitional energy-driven,Trans_E
+AU-DaS,1.0,transitional energy-driven,Trans_E
+AU-Dry,1.0,transitional energy-driven,Trans_E
+AU-How,1.0,transitional energy-driven,Trans_E
+AU-Stp,1.0,transitional energy-driven,Trans_E
+AU-Wac,1.0,transitional energy-driven,Trans_E
+AU-Wom,8.0,transitional water-driven,Trans_W
+BE-Bra,5.0,mid-latitude temperature-driven,MidL_T
+BE-Lon,5.0,mid-latitude temperature-driven,MidL_T
+BE-Vie,5.0,mid-latitude temperature-driven,MidL_T
+BR-Sa3,3.0,tropical,Tropic
+CA-Gro,4.0,boreal temperature-driven,Bor_T
+CA-NS6,4.0,boreal temperature-driven,Bor_T
+CA-SF2,4.0,boreal temperature-driven,Bor_T
+CA-SF3,4.0,boreal temperature-driven,Bor_T
+CG-Tch,3.0,tropical,Tropic
+CH-Lae,5.0,mid-latitude temperature-driven,MidL_T
+CN-Din,10.0,subtropical energy-driven,SubTr_E
+CZ-BK1,5.0,mid-latitude temperature-driven,MidL_T
+DE-Kli,5.0,mid-latitude temperature-driven,MidL_T
+DE-Obe,5.0,mid-latitude temperature-driven,MidL_T
+DE-RuS,5.0,mid-latitude temperature-driven,MidL_T
+DE-Seh,5.0,mid-latitude temperature-driven,MidL_T
+DE-Spw,5.0,mid-latitude temperature-driven,MidL_T
+DE-Tha,5.0,mid-latitude temperature-driven,MidL_T
+FI-Hyy,7.0,boreal water/temperature-driven,Bor_WT
+FI-Let,7.0,boreal water/temperature-driven,Bor_WT
+FR-Fon,5.0,mid-latitude temperature-driven,MidL_T
+FR-LBr,1.0,transitional energy-driven,Trans_E
+FR-Pue,1.0,transitional energy-driven,Trans_E
+GF-Guy,3.0,tropical,Tropic
+GH-Ank,3.0,tropical,Tropic
+IT-Cpz,1.0,transitional energy-driven,Trans_E
+IT-Ro1,1.0,transitional energy-driven,Trans_E
+IT-SRo,1.0,transitional energy-driven,Trans_E
+JP-MBF,4.0,boreal temperature-driven,Bor_T
+JP-SMF,1.0,transitional energy-driven,Trans_E
+MY-PSO,3.0,tropical,Tropic
+NL-Loo,5.0,mid-latitude temperature-driven,MidL_T
+PA-SPn,1.0,transitional energy-driven,Trans_E
+RU-Che,2.0,boreal energy-driven,Bor_E
+RU-Fyo,7.0,boreal water/temperature-driven,Bor_WT
+SD-Dem,6.0,subtropical water-driven,SubTr_E
+US-ARM,0.0,mid-latitude water-driven,MidL_W
+US-Ivo,2.0,boreal energy-driven,Bor_E
+US-Me6,1.0,transitional energy-driven,Trans_E
+US-SRC,1.0,transitional energy-driven,Trans_E
+US-SRG,1.0,transitional energy-driven,Trans_E
+US-SRM,1.0,transitional energy-driven,Trans_E
+US-Sta,0.0,mid-latitude water-driven,MidL_W
+US-UMd,4.0,boreal temperature-driven,Bor_T
+ZA-Kru,8.0,transitional water-driven,Trans_W
